@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathish R | Backend-Focused Full Stack Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Sathish R, a Backend-Focused Full Stack Developer building scalable APIs and intelligent applications using Java, Spring Boot, MongoDB, and modern web technologies.">
+  <meta name="keywords" content="Sathish R, Backend Developer, Full Stack Developer, Java Developer, Spring Boot, Software Engineer, Portfolio, Developer Knowledge Vault, Crop Prediction">
+  <meta name="author" content="Sathish R">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sathish R | Backend-Focused Full Stack Developer">
+  <meta property="og:description" content="Building scalable APIs and intelligent applications using Java, Spring Boot, MongoDB, and modern web technologies.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Sathish R | Backend-Focused Full Stack Developer">
+  <meta property="twitter:description" content="Building scalable APIs and intelligent applications using Java, Spring Boot, MongoDB, and modern web technologies.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2310B981%22>⚡</text></svg>">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JavaScript (Deferred) -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- --- Global Viewport Layout Elements --- -->
+  
+  <!-- S.R Logo Top Left -->
+  <div class="global-logo" id="global-logo">
+    <a href="#" class="logo-link" id="logo-home-trigger">
+      <span class="text-accent">&lt;</span>Sathish.R <span class="text-accent">/&gt;</span>
+    </a>
+  </div>
+
+  <!-- Global Floating Back Button (hidden on home) -->
+  <button class="global-back-btn" id="global-back-btn" aria-label="Go back to home" title="Back to Home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Sidebar Social Links (left edge) -->
+  <div class="global-sidebar" id="global-sidebar">
+    <div class="sidebar-socials">
+      <a href="https://github.com/Sathish45-sat" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" id="sidebar-github">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/sathish-r-b6a54b328/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" id="sidebar-linkedin">
+        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="mailto:sathishr4509@gmail.com" class="social-icon" aria-label="Email Sathish" id="sidebar-email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
+    <div class="sidebar-line"></div>
+  </div>
+
+  <!-- Interactive Theme Mode Toggle Button -->
+  <button class="global-mode-toggle" id="global-mode-toggle" aria-label="Toggle Terminal Mode" title="Toggle Terminal / Modern View">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-terminal">
+      <polyline points="4 17 10 11 4 5"></polyline>
+      <line x1="12" y1="19" x2="20" y2="19"></line>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-yin-yang" style="display: none;">
+      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+      <path d="M12 6a3 3 0 1 0 3 3 3 3 0 0 0-3-3zm0 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z"></path>
+      <path d="M12 2a10 10 0 0 0 0 20c2-5-2-7 0-20z"></path>
+    </svg>
+  </button>
+
+  <!-- --- Main Views Wrapper --- -->
+  <main class="views-wrapper" id="views-wrapper">    <!-- ================= HOME VIEW (SPLIT LANDING) ================= -->
+    <section class="portfolio-view view-active landing-mode" id="home-view">
+      <!-- Split background -->
+      <div class="split-bg-container">
+        
+        <!-- Left Side: Backend / Logic -->
+        <div class="split-side split-left" id="split-left-trigger">
+          <!-- Animated terminal streams -->
+          <div class="terminal-stream-overlay" id="terminal-stream"></div>
+          <div class="split-label font-mono">SYSTEMS_&_LOGIC</div>
+        </div>
+
+        <!-- Right Side: Frontend / Client -->
+        <div class="split-side split-right" id="split-right-trigger">
+          <div class="grid-mesh-overlay"></div>
+          <div class="split-label">CLIENT_&_INTERFACE</div>
+        </div>
+      </div>
+
+      <!-- Initial Central Sharingan Landing Button -->
+      <div class="landing-trigger-wrapper" id="landing-trigger-wrapper">
+        <button class="landing-yin-yang-btn" id="landing-yin-yang-btn" aria-label="Open portfolio details">
+          <svg viewBox="0 0 100 100" class="sharingan-icon-large">
+            <defs>
+              <g id="sharingan-tomoe">
+                <circle cx="0" cy="-26" r="6.5" fill="#000000" />
+                <path d="M -6.5 -26 C -6.5 -18 3 -16 6 -20 C 1 -28 -6.5 -28 -6.5 -26 Z" fill="#000000" />
+              </g>
+            </defs>
+            <!-- Red Iris -->
+            <circle cx="50" cy="50" r="45" fill="#e50914" stroke="#000000" stroke-width="3" />
+            <!-- Connection Ring -->
+            <circle cx="50" cy="50" r="26" fill="none" stroke="#000000" stroke-width="2.5" />
+            <!-- Pupil -->
+            <circle cx="50" cy="50" r="10" fill="#000000" />
+            <!-- Tomoes rotated around center -->
+            <g transform="translate(50, 50)">
+              <use href="#sharingan-tomoe" transform="rotate(0)" />
+              <use href="#sharingan-tomoe" transform="rotate(120)" />
+              <use href="#sharingan-tomoe" transform="rotate(240)" />
+            </g>
+          </svg>
+        </button>
+        <span class="click-here-text font-mono">click here</span>
+      </div>
+
+      <!-- Edge-Anchored Nav Elements -->
+      <nav class="edge-navigation">
+        <div class="nav-stack-left">
+          <a href="#experience" class="edge-nav-link nav-vertical nav-exp" id="nav-trigger-experience" data-target="experience-view">
+            Achievements
+          </a>
+          <a href="#projects" class="edge-nav-link nav-vertical nav-proj" id="nav-trigger-projects" data-target="projects-view">
+            Projects
+          </a>
+        </div>
+        
+        <div class="nav-stack-right">
+          <a href="#journey" class="edge-nav-link nav-vertical nav-journ" id="nav-trigger-journey" data-target="journey-view">
+            Journey
+          </a>
+        </div>
+
+        <div class="nav-stack-bottom">
+          <a href="#about" class="edge-nav-link nav-about" id="nav-trigger-about" data-target="about-view">
+            About
+          </a>
+          <a href="#skills" class="edge-nav-link nav-skills" id="nav-trigger-skills" data-target="skills-view">
+            My Skills
+          </a>
+        </div>
+
+        <button class="edge-nav-btn nav-top-right" id="nav-trigger-contact" data-target="contact-view">
+          Say hi..
+        </button>
+      </nav>
+
+      <!-- Center Dynamic Split Profile Card -->
+      <div class="center-card-container">
+        <div class="split-profile-card" id="main-profile-card">
+          <!-- Card Left (on the dark side) -->
+          <div class="card-part card-part-left">
+            <span class="hero-subtitle">Hi, my name is</span>
+            <h1 class="hero-title">Sathish R</h1>
+            <h2 class="hero-tagline">Backend-Focused Developer</h2>
+            <p class="hero-desc">
+              Building scalable APIs, solid database architectures, and intelligent systems using Java, Spring Boot, MongoDB, and modern web technologies.
+            </p>
+            <div class="card-ctas">
+              <button class="btn btn-primary btn-nav-go" data-target="projects-view">View Projects</button>
+              <a href="assets/Sathish_R_Resume.pdf" class="btn btn-secondary" download="Sathish_R_Resume.pdf" id="btn-download-resume-split">
+                Resume
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card Right (on the light side) -->
+          <div class="card-part card-part-right">
+            <img src="assets/developer_avatar.png" alt="Sathish R avatar vector" class="developer-avatar-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME VIEW ================= -->
+    <section class="portfolio-view view-hidden" id="about-view">
+      <div class="watermark-bg" id="watermark-about">ABOUT</div>
+      <div class="container view-content-wrapper">
+        <div class="about-view-grid">
+          <div class="about-view-text glass-card">
+            <h2 class="section-title"><span class="font-mono text-accent">02.</span> About Me</h2>
+            <p>
+              Hi, I'm Sathish R, an Information Technology student passionate about backend software engineering and building scalable applications.
+            </p>
+            <p>
+              I enjoy developing robust backend systems using Java, Spring Boot, MongoDB, and REST APIs, with a strong focus on clean architecture, database design, and performance. I like solving real-world problems through software and continuously improving my understanding of system design, data structures, and software engineering principles.
+            </p>
+            <p>
+              Beyond backend development, I explore machine learning and data-driven solutions, combining predictive models with modern web technologies to create impactful applications.
+            </p>
+            <p>
+              Currently, I am focused on strengthening my backend development skills, building practical projects, and preparing for software engineering opportunities.
+            </p>
+            
+            <div class="about-bullets-container">
+              <ul class="about-view-bullets">
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">🎓</span>
+                  <span>Information Technology Student</span>
+                </li>
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">☕</span>
+                  <span>Backend Engineering Enthusiast</span>
+                </li>
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">🚀</span>
+                  <span>Java, Spring Boot & REST APIs</span>
+                </li>
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">🗄️</span>
+                  <span>Database Design & Scalable Systems</span>
+                </li>
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">🤖</span>
+                  <span>Machine Learning & Predictive Applications</span>
+                </li>
+                <li>
+                  <span class="about-bullet-emoji" style="font-size: 1.25rem;">💡</span>
+                  <span>Problem Solving & Software Development</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="about-view-image-container">
+            <div class="about-photo-wrapper">
+              <img src="assets/developer_avatar.png" alt="Sathish R Full Portrait Avatar" class="about-avatar-large">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL SKILLS VIEW ================= -->
+    <section class="portfolio-view view-hidden" id="skills-view">
+      <canvas class="particles-mesh-canvas" id="skills-particles"></canvas>
+      <div class="watermark-bg" id="watermark-skills">SKILLS</div>
+      <div class="container view-content-wrapper">
+        <h2 class="section-title"><span class="font-mono text-accent">03.</span> Technical Skills</h2>
+        <div class="skills-view-grid">
+          
+          <!-- Column 1: Backend Systems & Languages -->
+          <div class="skill-card-column glass-card">
+            <div class="skill-column-header">
+              <div class="skill-column-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3>Backend & Logic Systems</h3>
+            </div>
+            <p class="skill-column-desc">Building scalable backend applications, REST APIs, database systems, and efficient software solutions using modern engineering practices.</p>
+            
+            <div class="skill-category-block">
+              <h4>Languages</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+                  Java
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                  Python
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.5A7.5 7.5 0 1 1 18 7.5"/></svg>
+                  C
+                </span>
+              </div>
+            </div>
+
+            <div class="skill-category-block">
+              <h4>Frameworks & Databases</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a8.5 8.5 0 0 1-9 10z"/><path d="M9.8 6.1C10.5 9 12 12 15 15"/></svg>
+                  Spring Boot
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                  MongoDB
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                  MySQL
+                </span>
+              </div>
+            </div>
+
+            <div class="skill-category-block">
+              <h4>APIs & Security</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  REST APIs
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                  JWT Authentication
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Web UI & Tooling -->
+          <div class="skill-card-column glass-card">
+            <div class="skill-column-header">
+              <div class="skill-column-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+              </div>
+              <h3>Web UI & Tooling</h3>
+            </div>
+            <p class="skill-column-desc">Developing responsive user interfaces and leveraging modern development tools for efficient software delivery.</p>
+            
+            <div class="skill-category-block">
+              <h4>Web Frontend</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="1.8"/></svg>
+                  React
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  JavaScript
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                  HTML5
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.03457 19.176 5.09703 19.4318 5.01732 19.671C4.78287 20.3742 4.65935 21.1219 4.65935 21.9C4.65935 21.9552 4.70412 22 4.75935 22H12Z"/></svg>
+                  CSS3
+                </span>
+              </div>
+            </div>
+
+            <div class="skill-category-block">
+              <h4>Toolkits & Tooling</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+                  Git
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  VS Code
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                  Docker
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  Jupyter Notebook
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Machine Learning & Deployment -->
+          <div class="skill-card-column glass-card">
+            <div class="skill-column-header">
+              <div class="skill-column-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3>Machine Learning & Deployment</h3>
+            </div>
+            <p class="skill-column-desc">Building predictive models, data-driven applications, and deploying machine learning solutions through modern APIs and web interfaces.</p>
+            
+            <div class="skill-category-block">
+              <h4>Data Science & ML</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                  Python
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  Scikit-learn
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 9h18M3 15h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                  Pandas
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                  NumPy
+                </span>
+              </div>
+            </div>
+
+            <div class="skill-category-block">
+              <h4>Pipeline & Deployment</h4>
+              <div class="skills-badges-wrap">
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                  Data Preprocessing
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+                  Model Training
+                </span>
+                <span class="skill-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  FastAPI
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS VIEW ================= -->
+    <section class="portfolio-view view-hidden" id="projects-view">
+      <div class="watermark-bg" id="watermark-work">WORK</div>
+      <div class="watermark-bg-sub" id="watermark-swipe">Scroll..</div>
+      <div class="container view-content-wrapper projects-view-container">
+        <h2 class="section-title"><span class="font-mono text-accent">04.</span> Featured Projects</h2>
+        
+        <!-- Horizontal Scrollable Container -->
+        <div class="horizontal-scroll-wrapper" id="projects-horizontal-scroll">
+          
+          <!-- Card 1 -->
+          <div class="leaf-project-card">
+            <div class="project-content-left">
+              <span class="project-meta font-mono">Full Stack Application</span>
+              <h3 class="project-heading">Developer Knowledge Vault</h3>
+              <p class="project-summary">
+                A production-style knowledge management system for developers to store, search, and version-control notes, code snippets, and references — with intelligent analytics to track what needs revision.
+              </p>
+              
+              <ul class="project-bullets-list">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Centralized documentation storage with rich text, code snippets, image attachments, and metadata tagging.</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Hybrid search engine combining MongoDB Text Indexing with real-time React-side filtering for zero-latency results.</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>JWT-secured REST API with 17 endpoints, role-based access, and automatic version history on every update.</span>
+                </li>
+              </ul>
+              
+              <div class="project-tags-wrap">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">JWT Security</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Sathish45-sat/Developer-Knowledge-Vault" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="proj-vault-github">GitHub Repo</a>
+                <span class="btn btn-primary btn-disabled" title="Demo Coming Soon" id="proj-vault-demo">Live Demo</span>
+              </div>
+            </div>
+            
+            <div class="project-content-right">
+              <span class="arch-visual-title">Architecture Flow</span>
+              <div class="visual-flow-chart">
+                <div class="flow-node">User Request</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">React Frontend (Search, Auth UI)</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">Spring Boot REST API (JWT Security)</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">MongoDB (Text Index, Version History)</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">Analytics Dashboard (Access Count, Tag Frequency)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="leaf-project-card">
+            <div class="project-content-left">
+              <span class="project-meta font-mono">Machine Learning / Python</span>
+              <h3 class="project-heading">Crop & Carbon Prediction System</h3>
+              <p class="project-summary">
+                A live-deployed ML web application that recommends optimal crops and predicts soil carbon sequestration potential — powered by Random Forest models and served via a Dockerized FastAPI backend.
+              </p>
+              
+              <ul class="project-bullets-list">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dual-model ML pipeline — Random Forest Classifier for crop recommendation and Regressor for carbon scoring.</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Trained on 7 soil and climate parameters — Nitrogen, Phosphorus, Potassium, pH, rainfall, temperature, humidity.</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Containerized with Docker and deployed live on Render cloud with a publicly accessible web interface.</span>
+                </li>
+              </ul>
+              
+              <div class="project-tags-wrap">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Render</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Sathish45-sat/crop_recommendation_prj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="proj-crop-github">GitHub Repo</a>
+                <a href="https://crop-and-carbon-score-prediction.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="proj-crop-demo">Live Demo</a>
+              </div>
+            </div>
+            
+            <div class="project-content-right">
+              <span class="arch-visual-title">Predictive Flow</span>
+              <div class="visual-flow-chart ml-flow">
+                <div class="flow-node">Soil & Climate Inputs</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">FastAPI Backend</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight ml-pipeline">ML Preprocessing Pipeline (Pandas, Scikit-learn)</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node highlight">Random Forest Classifier → Crop Recommendation</div>
+                <div class="flow-arrow">&#8595;</div>
+                <div class="flow-node result-node">Random Forest Regressor → Carbon Score</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEARNING JOURNEY TIMELINE VIEW ================= -->
+    <section class="portfolio-view view-hidden" id="journey-view">
+      <div class="watermark-bg" id="watermark-journey">JOURNEY</div>
+      <div class="container view-content-wrapper">
+        <h2 class="section-title"><span class="font-mono text-accent">05.</span> Learning Journey</h2>
+        <div class="journey-view-grid">
+          
+          <!-- Left timeline -->
+          <div class="journey-timeline-container glass-card">
+            <div class="custom-timeline">
+              
+              <!-- Timeline 1 -->
+              <div class="custom-timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date font-mono">2024</span>
+                <h3 class="timeline-heading">Academic Genesis</h3>
+                <p class="timeline-text">Began B.Tech in Information Technology at Rajalakshmi Engineering College. Built a foundation in programming, computational thinking, fundamental algorithms, and core computer science principles.</p>
+              </div>
+ 
+              <!-- Timeline 2 -->
+              <div class="custom-timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date font-mono">2025</span>
+                <h3 class="timeline-heading">Core Fundamentals Mastery</h3>
+                <p class="timeline-text">Developed proficiency in Java, Object-Oriented Programming (OOP), Data Structures & Algorithms, and problem-solving techniques. Strengthened logical thinking through coding practice and academic coursework.</p>
+              </div>
+
+              <!-- Timeline 3 -->
+              <div class="custom-timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date font-mono">2026</span>
+                <h3 class="timeline-heading">Full-Stack & Backend Engineering</h3>
+                <p class="timeline-text">Transitioned from theory to practical software development by building full-stack applications using React, Spring Boot, MongoDB, and REST APIs. Implemented authentication systems, database integration, and deployment workflows while gaining hands-on experience with real-world software engineering practices.</p>
+              </div>
+
+              <!-- Timeline 4 -->
+              <div class="custom-timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date font-mono">2026 (Current)</span>
+                <h3 class="timeline-heading">Backend & Machine Learning Applications</h3>
+                <p class="timeline-text">Expanding expertise in backend architecture, JWT security, MongoDB schema design, scalable application development, and machine learning deployment. Building data-driven applications and deploying predictive models to cloud platforms.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right milestones / certs -->
+          <div class="journey-milestones-column">
+            
+            <div class="milestone-box glass-card border-accent-top">
+              <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-svg-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Future Milestones
+              </h3>
+              <div class="milestones-vertical-list">
+                <div class="m-item">
+                  <span class="m-title">🔷 Microservices</span>
+                  <span class="m-desc">Distributed service communication, API gateways, and event-driven architectures</span>
+                </div>
+                <div class="m-item">
+                  <span class="m-title">🐳 Docker & DevOps</span>
+                  <span class="m-desc">Containerization, CI/CD pipelines, and reproducible deployments</span>
+                </div>
+                <div class="m-item">
+                  <span class="m-title">☁️ AWS Infrastructure</span>
+                  <span class="m-desc">Cloud deployment, auto-scaling, and managed services</span>
+                </div>
+                <div class="m-item">
+                  <span class="m-title">⚡ High Availability Systems</span>
+                  <span class="m-desc">Caching strategies, low-latency design, and resilient architectures</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certs-box-container">
+              <h3 class="sub-column-title">Certifications</h3>
+              <div class="cert-grid-layout">
+                
+                <div class="cert-item-card glass-card">
+                  <div class="cert-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                  </div>
+                  <div class="cert-item-details">
+                    <h4>Artificial Intelligence & Machine Learning</h4>
+                    <span class="cert-item-issuer">IITM Pravartak</span>
+                  </div>
+                </div>
+
+                <div class="cert-item-card glass-card">
+                  <div class="cert-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                  </div>
+                  <div class="cert-item-details">
+                    <h4>Software Engineering Virtual Experience</h4>
+                    <span class="cert-item-issuer">JPMorgan Chase & Co. (Forage)</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE VIEW ================= -->
+    <section class="portfolio-view view-hidden" id="experience-view">
+      <div class="watermark-bg" id="watermark-experience">ACHIEVEMENTS</div>
+      <div class="container view-content-wrapper">
+        <h2 class="section-title"><span class="font-mono text-accent">01.</span> Key Achievements</h2>
+        <div class="experience-view-split">
+          
+          <!-- Experience Left: LeetCode & Profile Card -->
+          <div class="experience-split-left glass-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; padding: 2.5rem 2rem;">
+            <h3 class="exp-company" style="font-size: 1.5rem; margin-bottom: 0.5rem;">LeetCode Profile</h3>
+            <div style="width: 160px; height: 160px; border-radius: 12px; overflow: hidden; background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; padding: 10px;">
+              <img src="assets/leetcode_badge_2026.png" alt="LeetCode 50 Days Badge 2026" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <span class="exp-role" style="font-size: 1rem; color: var(--accent-left); font-weight: 600; margin-bottom: 0.25rem;">50 Days Badge 2026</span>
+            <div class="exp-badge-row" style="margin-bottom: 0;">
+              <a href="https://leetcode.com/u/En0z4HWNiT/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">View Profile</a>
+            </div>
+          </div>
+
+          <!-- Experience Right: Bullet details -->
+          <div class="experience-split-right glass-card">
+            <p class="exp-summary-text" style="margin-bottom: 1.5rem;">
+              Demonstrated consistency in problem solving, practical application development, and academic excellence.
+            </p>
+            <ul class="exp-details-bullets">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bullet-arrow"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span><strong>90+ Problems Solved:</strong> Solved 90+ coding problems on LeetCode across various Data Structures and Algorithms topics.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bullet-arrow"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span><strong>🏆 LeetCode 50 Days Badge:</strong> Awarded for solving problems on 50 active days in 2026, reflecting consistent engagement with algorithmic problem-solving.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bullet-arrow"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span><strong>ML Deployment:</strong> Successfully developed and deployed end-to-end machine learning applications on cloud platforms (FastAPI, Docker, Render).</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bullet-arrow"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span><strong>Academic Excellence:</strong> Maintained an academic CGPA of 8.02 while actively pursuing software engineering projects and technical certifications.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GET IN TOUCH VIEW (CONTACT TERMINAL) ================= -->
+    <section class="portfolio-view view-hidden" id="contact-view">
+      <div class="watermark-bg" id="watermark-contact">CONTACT</div>
+      <div class="container view-content-wrapper contact-view-container">
+        
+        <div class="contact-view-grid">
+          
+          <div class="contact-text-details">
+            <h2 class="section-title"><span class="font-mono text-accent">06.</span> Get In Touch</h2>
+            <p>
+              I am currently open to internship opportunities, collaborative projects, and junior backend developer positions. If you have an interesting codebase to build, or simply want to talk systems architecture, drop me a message!
+            </p>
+            
+            <div class="contact-methods-stack">
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <a href="mailto:sathishr4509@gmail.com" class="method-val" id="contact-email-val">sathishr4509@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">GitHub</span>
+                  <a href="https://github.com/Sathish45-sat" target="_blank" rel="noopener noreferrer" class="method-val" id="contact-github-val">github.com/Sathish45-sat</a>
+                </div>
+              </div>
+
+              <div class="method-item">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/sathish-r-b6a54b328/" target="_blank" rel="noopener noreferrer" class="method-val" id="contact-linkedin-val">linkedin.com/in/sathish-r-b6a54b328/</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal Style Contact Form -->
+          <div class="terminal-form-container glass-card" id="terminal-window">
+            <div class="terminal-header-bar">
+              <div class="terminal-dots">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+              </div>
+              <span class="terminal-title font-mono">sathish_r@backend:~/contact</span>
+            </div>
+            
+            <form id="contact-form" class="terminal-form-body font-mono">
+              <div class="terminal-welcome-text"># Initialize system contact form...</div>
+              
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@localhost:~$ enter name:</span>
+                <input type="text" id="name" class="terminal-input-field" placeholder="..." required autocomplete="off">
+              </div>
+
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@localhost:~$ enter email:</span>
+                <input type="email" id="email" class="terminal-input-field" placeholder="..." required autocomplete="off">
+              </div>
+
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@localhost:~$ type message:</span>
+                <textarea id="message" class="terminal-input-area" placeholder="Write message..." required></textarea>
+              </div>
+
+              <div id="form-status" class="terminal-status-msg"></div>
+              
+              <div class="terminal-btn-row">
+                <button type="submit" class="btn btn-primary terminal-submit-btn" id="btn-submit-message">[ RUN SUBMIT ]</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="footer-view-content font-mono">
+          <p>Designed and Developed by Sathish R &copy; 2026</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
