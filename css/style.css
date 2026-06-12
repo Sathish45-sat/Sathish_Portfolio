@@ -2090,3 +2090,53 @@ body.terminal-theme .watermark-bg {
     font-size: 2rem;
   }
 }
+
+/* ================= MOBILE FLOATING NAV DOCK ================= */
+.mobile-nav-dock {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 0.4rem 0.8rem;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(16, 185, 129, 0.05);
+}
+
+.mobile-nav-dock-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #94a3b8;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-dock-item:hover,
+.mobile-nav-dock-item.active {
+  color: var(--accent-left);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mobile-nav-dock-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-dock {
+    display: flex;
+  }
+}
