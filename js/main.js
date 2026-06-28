@@ -65,7 +65,35 @@ function initViewRouting() {
 
   // Bind landing trigger button
   if (landingBtn && homeView) {
+    const sharinganIcon = landingBtn.querySelector('.sharingan-icon-large');
+
+    const handleHoverStart = () => {
+      if (landingBtn.classList.contains('clicked')) return;
+      landingBtn.classList.remove('unhovered-once');
+      landingBtn.classList.add('hovered-once');
+    };
+
+    const handleHoverEnd = () => {
+      if (landingBtn.classList.contains('clicked')) return;
+      landingBtn.classList.remove('hovered-once');
+      landingBtn.classList.add('unhovered-once');
+    };
+
+    landingBtn.addEventListener('mouseenter', handleHoverStart);
+    landingBtn.addEventListener('touchstart', handleHoverStart, { passive: true });
+    landingBtn.addEventListener('mouseleave', handleHoverEnd);
+    landingBtn.addEventListener('touchend', handleHoverEnd, { passive: true });
+
+    if (sharinganIcon) {
+      sharinganIcon.addEventListener('animationend', (e) => {
+        if (e.animationName === 'sharingan-reverse-once') {
+          landingBtn.classList.remove('unhovered-once');
+        }
+      });
+    }
+
     landingBtn.addEventListener('click', () => {
+      landingBtn.classList.add('clicked');
       homeView.classList.remove('landing-mode');
       homeView.classList.add('split-active-mode');
       backBtn.classList.add('btn-visible');
@@ -101,6 +129,11 @@ function initViewRouting() {
       backBtn.classList.remove('btn-visible');
       window.location.hash = '';
       resetSplits();
+      if (landingBtn) {
+        landingBtn.classList.remove('clicked');
+        landingBtn.classList.remove('hovered-once');
+        landingBtn.classList.remove('unhovered-once');
+      }
     }
   });
 
@@ -115,6 +148,11 @@ function initViewRouting() {
       backBtn.classList.remove('btn-visible');
       window.location.hash = '';
       resetSplits();
+      if (landingBtn) {
+        landingBtn.classList.remove('clicked');
+        landingBtn.classList.remove('hovered-once');
+        landingBtn.classList.remove('unhovered-once');
+      }
     }
   });
 

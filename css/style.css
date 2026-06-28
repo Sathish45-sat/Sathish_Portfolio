@@ -546,15 +546,63 @@ button {
   justify-content: center;
 }
 
+/* Sharingan Animations */
+@keyframes sharingan-idle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sharingan-fast-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sharingan-reverse-once {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sharingan-click-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .sharingan-icon-large {
   width: 120px;
   height: 120px;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0 6px 15px rgba(229, 9, 20, 0.4));
+  animation: sharingan-idle 12s linear infinite;
+  transition: filter 0.3s ease;
 }
 
-.landing-yin-yang-btn:hover .sharingan-icon-large {
-  transform: rotate(360deg);
+.landing-yin-yang-btn.hovered-once .sharingan-icon-large {
+  animation: sharingan-fast-once 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  filter: drop-shadow(0 8px 25px rgba(229, 9, 20, 0.7));
+}
+
+.landing-yin-yang-btn.unhovered-once .sharingan-icon-large {
+  animation: sharingan-reverse-once 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.landing-yin-yang-btn.clicked .sharingan-icon-large {
+  animation: sharingan-click-spin 0.25s linear infinite;
+  filter: drop-shadow(0 12px 35px rgba(229, 9, 20, 0.95));
 }
 
 .click-here-text {
